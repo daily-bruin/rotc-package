@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color: #A68B5D;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: #A68B5D;
+}
+
+a:hover {
+    color: #84693B;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header {
+    margin: 35px 0 35px 0;
+    line-height: 2.8em;
+}
+
+footer {
+    color: #A68B5D;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+#star {
+    background: url(../image/star_lightBeige.png) no-repeat center top;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: -40px;
+    left: 50%;
+    margin-left: -125px;
+    z-index: -5;
+}
+
+#timeline {
+    position: fixed;
+    /* "hack" to center align */
+    left: 50%;
+    margin-left: -400px;
+    top: 15px;
+    width: 800px;
+    height: 10px;
+    background: rgba(0,0,0, 0.7);
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0 0 2px #fff;
+}
+
+.bullet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #A68B5D; /* beige (dark) */  
+    border-radius: 50%;
+    top: -50%;
+    box-shadow: 0 0 2px #fff;
+}
+
+.bullet-mask {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    background: rgba(255,255,255, 0.3);
+    border-radius: 50%;
+    top: -50%;
+}
+
+/* position of each bullet */
+#bullet-1 {
+    left: -1px;
+}
+
+#bullet-2 {
+    left: 158px;
+}
+
+#bullet-3 {
+    left: 316px;
+}
+
+#bullet-4 {
+    left: 474px;
+}
+
+#bullet-5 {
+    left: 632px;
+}
+
+#bullet-6 {
+    left: 790px;
+}
+
+span.tooltip {
+    position: absolute;
+    width: 100px;
+    left: -40px;
+    top: 30px;
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0, 0.7);
+    line-height: 1em;
+    text-shadow: 1px 1px #000;
+}
+
+span.tooltip:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent rgba(0,0,0, 0.7)  transparent;
+      top: -20px;
+      left: 40px;
+}
+
+.tooltip .time {
+    font-family: monospace;
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+div.feature {
+    position: relative;
+    width: 1170px;
+    margin: auto;
+}
+
+img.feature {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.caption {
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    padding: 10px;
+}
+
+.caption h3 {
+    margin-bottom: 4px;
+}
+
+
+/* position of captions for individual images */
+.caption#img-1 {
+    bottom: 30px;
+    right: 30px;
+    width: 300px;
+}
+
+.caption#img-2 {
+    top: 160px;
+    right: 60px;
+    width: 300px;
+}
+
+.caption#img-3 {
+    bottom: 90px;
+    right: 180px;
+    width: 300px;
+}
+
+.caption#img-4 {
+    top: 60px;
+    right: 30px;
+    width: 300px;
+}
+
+.caption#img-5 {
+    top: 160px;
+    right: 90px;
+    width: 300px;
+}
+
+.caption#img-6 {
+    bottom: 60px;
+    right: 30px;
+    width: 300px;
+}
+
+.unused {
+    background: #F5F5DC; /* beige (light) */
+}
