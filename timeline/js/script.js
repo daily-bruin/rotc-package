@@ -6,7 +6,7 @@ var hideNav = function() {
 }
 
 var waypoints = function(wp) {
-    if ($('#tooltip-'+String(wp)).css('opacity') < 1) {
+    if ($('#tooltip-'+String(wp)).css('opacity') < 1) { // check if the current tooltip is not visible
         $('.bullet-mask, .tooltip').css('opacity', 0); //hide all masks, tooltips
         $('#bullet-mask-'+String(wp)).animate({'opacity': 1}); //fade in this mask
         $('#tooltip-'+String(wp)).animate({'opacity': 1}); //fade in this tooltip
@@ -14,6 +14,8 @@ var waypoints = function(wp) {
 
     if ($('.caption#img-'+String(wp)).css('opacity') < 1) {
         /* executes the proper code depending on whether position is definied by 'top' or 'bottom' */
+        /* NOTE: not working in Firefox, likely because Firefox
+         * doesn't assign "position: 'auto'" to unassigned CSS attributes */
         if ($('.caption#img-'+String(wp)).css('bottom') === 'auto') {
             $('.caption#img-'+String(wp))
                 .css({'top': '+=30px'})
