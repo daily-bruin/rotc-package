@@ -13,6 +13,7 @@
 <div style="text-align: center">
     <div id="timeline">
 <script type="text/javascript">
+var generateBulletsHtml = function() {
     bullets = /* format: time_of_day, activity */ [
         ['06:00', 'Breakfast'],
         ['07:00', 'Orientation'],
@@ -27,8 +28,11 @@
             '<div class="bullet" id="bullet-'+String(i+1)+'"><div class="bullet-mask" id="bullet-mask-'+String(i+1)+'"></div>'+
                 '<span class="tooltip" id="tooltip-'+String(i+1)+'"><span class="time">'+bullets[i][0]+'</span><br/>'+bullets[i][1]+'</span>'+
             '</div>'
-        )
+        );
     }
+}
+
+generateBulletsHtml();
 
 </script>
     </div>
