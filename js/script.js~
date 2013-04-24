@@ -41,7 +41,7 @@ var generateScroller = function(media_root, content, photo_width) {
             scroller_pos++;
         }
         else if (scroller_pos === content.length - 2) {
-            $('#next').html("&laquo;Start");
+            $('#next').html("&laquo;Back");
             $('.timelinePhoto').animate({left: '-='+photo_width}, 1000);
             scroller_pos++;
         }

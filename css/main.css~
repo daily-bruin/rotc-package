@@ -216,7 +216,7 @@ div.timelinePhoto {
     content: "";
     position: absolute;
     right: -22px;
-    top: -2px;
+    top: -1px;
     width: 0;
     height: 0;
     border-width: 12px;

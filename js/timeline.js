@@ -1,75 +1,39 @@
-var hideNav = function() {
-    /* hide elements by setting their opacity to 0 */
-    $('.caption').css('opacity', 0);
-    $('.tooltip').css('opacity', 0);
-    $('.bullet-mask').css('opacity', 0);
-}
+var generateScroller = function(media_root, content, photo_width) {
+    scroller_pos = 0;
+    content_width = (content.length - 1) * photo_width
+    document.write(
+        '<div id="scroller">'+
+            '<div id="next">Next&raquo;</div>'+
+            '<div id="passepartout"></div>'+
+            '<!--<div id="timelineHeadDecoration"></div>-->'
+    );
+    for (i=0; i < content.length; i++) {
+        document.write(
+            '<div class="timelinePhoto">'+
+                '<div class="timelineHead" id="timelineHead-'+(i+1)+'">'+
+                    '<span class="time">'+content[i][1]+'</span>'+
+                    '<span class="activity">'+content[i][2]+'</span>'+
+                '</div>'+
+                '<img src="'+media_root+content[i][0]+'"/>'+
+            '</div>'
+        )
+    };
+    document.write('</div>');
 
-var waypoints = function(wp) {
-    if ($('#tooltip-'+String(wp)).css('opacity') < 1) { // check if the current tooltip is not visible
-        $('.bullet-mask, .tooltip').css('opacity', 0); //hide all masks, tooltips
-        $('#bullet-mask-'+String(wp)).animate({'opacity': 1}); //fade in this mask
-        $('#tooltip-'+String(wp)).animate({'opacity': 1}); //fade in this tooltip
-    }
-
-    if ($('.caption#img-'+String(wp)).css('opacity') < 1) {
-        /* executes the proper code depending on whether position is definied by 'top' or 'bottom' */
-        /* NOTE: not working in Firefox, likely because Firefox
-         * doesn't assign "position: 'auto'" to unassigned CSS attributes */
-        if ($('.caption#img-'+String(wp)).css('bottom') === 'auto') {
-            $('.caption#img-'+String(wp))
-                .css({'top': '+=30px'})
-                .animate({'opacity': 1, 'top': '-=30px'}, 1000);
+    $('#next').click(function() {
+        if (scroller_pos < content.length - 2) {
+            $('.timelinePhoto').animate({left: '-='+photo_width}, 1000);
+            scroller_pos++;
+        }
+        else if (scroller_pos === content.length - 2) {
+            $('#next').html("&laquo;Back");
+            $('.timelinePhoto').animate({left: '-='+photo_width}, 1000);
+            scroller_pos++;
         }
         else {
-            $('.caption#img-'+String(wp))
-                .css({'bottom': '-=30px'})
-                .animate({'opacity': 1, 'bottom': '+=30px'}, 1000);
+            $('#next').html("Next&raquo;");
+            $('.timelinePhoto').animate({left: '+='+content_width}, 1000);
+            scroller_pos = 0;
         }
-    }
+    });
 }
-
-$(document).ready(function(){
-
-    hideNav();
-
-    /* detect which waypoint is reached and call the waypoints function on it */
-    $('h2').waypoint(function(up){
-        hideNav();
-    })
-
-    $('#feature-1').waypoint(function(down){
-        waypoints(1);
-    });
-
-    $('#feature-2').waypoint(function(down){
-        waypoints(2);
-    });
-
-    $('#feature-3').waypoint(function(down){
-        waypoints(3);
-    });
-
-    $('#feature-4').waypoint(function(down){
-        waypoints(4);
-    });
-
-    $('#feature-5').waypoint(function(down){
-        waypoints(5);
-    });
-
-    $('#feature-6').waypoint(function(down){
-        waypoints(6);
-    });
-
-});
-
-
-/*
-$('.caption#img1')
-    .css('opacity', 0)
-    .hide().slide(up)('slow')
-    .animate({opacity:1},
-    {queue: false, duration: 'slow'}
-    );
-*/
