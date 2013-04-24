@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <title>ROTC: A Day in the Life | Daily Bruin</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700'>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/waypoints/waypoints.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+<div style="text-align: center">
+
+    <div id="timeline">
+
+        <div class="bullet" id="bullet-1"><div class="bullet-mask" id="bullet-mask-1"></div>
+            <span class="tooltip" id="tooltip-1"><span class="time">06:00</span><br/>Breakfast</span>
+        </div> 
+
+        <div class="bullet" id="bullet-2"><div class="bullet-mask" id="bullet-mask-2"></div>
+            <span class="tooltip" id="tooltip-2"><span class="time">07:00</span><br/>Orientation</span>
+        </div>
+
+        <div class="bullet" id="bullet-3"><div class="bullet-mask" id="bullet-mask-3"></div>
+            <span class="tooltip" id="tooltip-3"><span class="time">09:00</span><br/>Drills, Drills, Drills</span>
+        </div>
+
+        <div class="bullet" id="bullet-4"><div class="bullet-mask" id="bullet-mask-4"></div>
+            <span class="tooltip" id="tooltip-4"><span class="time">12:00</span><br/>Flag ceremony</span>
+        </div>
+
+        <div class="bullet" id="bullet-5"><div class="bullet-mask" id="bullet-mask-5"></div>
+            <span class="tooltip" id="tooltip-5"><span class="time">15:00</span><br/>Shooting practice</span>
+        </div>
+
+        <div class="bullet" id="bullet-6"><div class="bullet-mask" id="bullet-mask-6"></div>
+            <span class="tooltip" id="tooltip-6"><span class="time">21:00</span><br/>R &amp; R</span>
+        </div>
+
+    </div>
+    <header>
+        <div id="star"></div>
+        <h2 id="subhead">ROTC</h2>
+        <h1 id="head">A Day in the Life</h1>
+    </header>
+</div>
+
+<script type="text/javascript">
+
+var generateContentHtml = function() {
+    content = /* in format: image_url, caption_title, caption_content */ [
+        ['img_1170x_1.jpg', 'Quis Nostrud', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+        ['img_1170x_2.jpg', 'Dolor Sit Amet', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
+        ['img_1170x_3.jpg', 'Consectetur', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'],
+        ['img_1170x_4.jpg', 'Ut Enim Ad Minim', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
+        ['img_1170x_5.jpg', 'Exercitation Ullamco', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+        ['img_1170x_6.jpg', 'Aliquip Ex Ea Commodo', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.']
+        ];
+
+    for (i=0; i<content.length; i++) {
+        document.write(
+           '<div class="feature" id="feature-'+String(i+1)+'">'+
+                '<img class="feature" src="image/'+content[i][0]+'"/>'+
+                '<div class="caption" id="img-'+String(i+1)+'">'+
+                    '<h3>'+content[i][1]+'</h3>'+
+                    '<p>'+content[i][2]+'</p>'+
+                '</div>'+
+            '</div>'
+        );
+    }
+}
+
+generateContentHtml();
+
+</script>
+
+<!--
+
+<div class="feature" id="feature-1">
+    <img class="feature" src="image/img_1170x_1.jpg"/>
+    <div class="caption" id="img-1">
+        <h3>Quis Nostrud</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
+
+<div class="feature" id="feature-2">
+    <img class="feature" src="image/img_1170x_2.jpg"/>
+    <div class="caption" id="img-2">
+        <h3>Dolor Sit Amet</h3>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<div class="feature" id="feature-3">
+    <img class="feature" src="image/img_1170x_3.jpg"/>
+    <div class="caption" id="img-3">
+        <h3>Consectetur</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+</div>
+
+<div class="feature" id="feature-4">
+    <img class="feature" src="image/img_1170x_4.jpg"/>
+    <div class="caption" id="img-4">
+        <h3>Ut Enim Ad Minim</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<div class="feature" id="feature-5">
+    <img class="feature" src="image/img_1170x_5.jpg"/>
+    <div class="caption" id="img-5">
+        <h3>Exercitation Ullamco</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
+
+<div class="feature" id="feature-6">
+    <img class="feature" src="image/img_1170x_6.jpg"/>
+    <div class="caption" id="img-6">
+        <h3>Aliquip Ex Ea Commodo</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+-->
+
+<footer>
+    <p>Concept design for the <a href="http://dailybruin.com/" target="blank">Daily Bruin</a></p>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <title>ROTC: A Day in the Life | Daily Bruin</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">    
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700'>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/waypoints/waypoints.js"></script>
+    <script src="js/timeline.js"></script>
+</head>
+
+<body>
+<div style="text-align: center">
+    <div id="timeline">
+<script type="text/javascript">
+var generateBulletsHtml = function() {
+    bullets = /* format: time_of_day, activity */ [
+        ['06:00', 'Breakfast'],
+        ['07:00', 'Orientation'],
+        ['09:00', 'Drills, Drills, Drills'],
+        ['12:00', 'Flag ceremony'],
+        ['15:00', 'Shooting practice'],
+        ['21:00', 'R &amp; R']
+        ]
+
+    for (i=0; i<bullets.length; i++) {
+        document.write(
+            '<div class="bullet" id="bullet-'+String(i+1)+'"><div class="bullet-mask" id="bullet-mask-'+String(i+1)+'"></div>'+
+                '<span class="tooltip" id="tooltip-'+String(i+1)+'"><span class="time">'+bullets[i][0]+'</span><br/>'+bullets[i][1]+'</span>'+
+            '</div>'
+        );
+    }
+}
+
+generateBulletsHtml();
+
+</script>
+    </div>
+
+    <header>
+        <div id="star"></div>
+        <h2 id="subhead">ROTC</h2>
+        <h1 id="head">A Day in the Life</h1>
+    </header>
+
+</div>
+
+<script type="text/javascript">
+var generateContentHtml = function() {
+    content = /* format: image_url, caption_title, caption_content */ [
+        ['img_1170x_1.jpg', 'Quis Nostrud', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+        ['img_1170x_2.jpg', 'Dolor Sit Amet', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
+        ['img_1170x_3.jpg', 'Consectetur', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'],
+        ['img_1170x_4.jpg', 'Ut Enim Ad Minim', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
+        ['img_1170x_5.jpg', 'Exercitation Ullamco', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+        ['img_1170x_6.jpg', 'Aliquip Ex Ea Commodo', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.']
+        ];
+
+    for (i=0; i<content.length; i++) {
+        document.write(
+           '<div class="feature" id="feature-'+String(i+1)+'">'+
+                '<img class="feature" src="image/timeline/'+content[i][0]+'"/>'+
+                '<div class="caption" id="img-'+String(i+1)+'">'+
+                    '<h3>'+content[i][1]+'</h3>'+
+                    '<p>'+content[i][2]+'</p>'+
+                '</div>'+
+            '</div>'
+        );
+    }
+}
+
+generateContentHtml();
+
+</script>
+
+<footer>
+    <p>Concept design for the <a href="http://dailybruin.com/" target="blank">Daily Bruin</a></p>
+</footer>
+
+</body>
+</html>

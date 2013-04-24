@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.arrow_box {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    background-color: #f00;
+}
+
+.arrow_box:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #f00 transparent transparent transparent;
+      top: 180px;
+      left: 80px;
+}
