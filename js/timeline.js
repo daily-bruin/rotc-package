@@ -1,4 +1,4 @@
-var generateScroller = function(media_root, content, photo_width) {
+var generateTimeline = function(media_root, content, photo_width) {
     scroller_pos = 0;
     content_width = (content.length - 1) * photo_width
     document.write(
