@@ -1,19 +1,21 @@
 <!doctype html>
 <html>
 <head>
-    <title>On Reserve | Daily Bruin</title>
+    <title>Training Ground | Daily Bruin</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Inconsolata:700'>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/carousel.js"></script>
 </head>
 
 <body>
 <header>
-    <h1>On Reserve</h1>
+    <h1>Training Ground</h1>
     <nav>
-        <a class="navItem" href="#faces"><!--<div class="navHighlight">--></div>Faces of ROTC Army</a>
+        <a class="navItem" href="#faces">Faces of ROTC Army</a>
         <a class="navItem" href="#women">Women in Combat</a>
         <a class="navItem" href="#timeline">Timeline</a>
         <a class="navItem" href="#video">First-Timers</a>
@@ -22,51 +24,185 @@
 
 </header>
 
+<div id="pageMask"></div>
 <div id="pageContainer">
 
     <div class="section" id="faces">
         <h2>Faces of ROTC Army</h2>
         <h3>Some extra description and stuff and things to make this subhead longer here.</h3>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-1">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Johnathan Duncan</h4>
             <span class="description">Lorem ipsum dolor sit amet consectectur adspiscing elit.</span>
         </div>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-1">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Johnathan Duncan</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-2">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Lisa H. Reynolds</h4>
             <span class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
         </div>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-2">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Lisa H. Reynolds</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-3">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Matthew L. Davis</h4>
             <span class="description">Duis aute irure dolor in reprehenderit.</span>
         </div>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-3">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Matthew L. Davis</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-4">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Robert Garner</h4>
             <span class="description">Excepteur sint occaecat cupidatat non proident.</span>
         </div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-4">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Robert Garner</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
     </div>
 
     <div class="section" id="women">
         <h2>Women in Combat</h2>
         <h3>Women are pretty great. Here's some stuff about women in the army.</h3>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-5">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Amanda Reid</h4>
             <span class="description">Lorem ipsum dolor sit amet consectectur adspiscing elit.</span>
         </div>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-5">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Amanda Reid</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-6">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Lisa H. Reynolds</h4>
             <span class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
         </div>
-        <div class="featurePortrait">
-            <div class="featurePhoto"></div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-6">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Lisa H. Reynolds</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
+        <div class="featurePortrait carouselLauncher" id="carouselLauncher-7">
+            <img class="featurePhoto" src="image/squareChatBubble.png"/>
             <h4>Bridget Adams</h4>
             <span class="description">Duis aute irure dolor in reprehenderit.</span>
         </div>
+
+<!-- HIDDEN -->
+<div class="carouselContainer" id="carouselContainer-7">
+    <div class="closeLabel"></div>
+    <div class="DUMMYphoto"></div>
+    <span class="carouselTitle">Bridget Adams</span>
+    <p class="carouselContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- END HIDDEN -->
+
     </div>
 
     <div class="section" id="timeline">
@@ -82,9 +218,9 @@
                 ['img_750x500_4.jpg', '15:00', "Flags, guns, boats. Bears, beets, Battlestar Galactica."],
                 ['img_750x500_5.jpg', '19:00', "Kick some more ass."],
                 ['img_750x500_6.jpg', '22:00', "Sleep like a boss."] 
-            ]
+            ];
 
-            media_root = "image/timeline/"
+            media_root = "image/timeline/";
 
             photo_width = 750;
 

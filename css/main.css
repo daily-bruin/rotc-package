@@ -159,31 +159,26 @@ div.timelinePhoto {
     display: inline-block;
     vertical-align: top;
     width: 180px;
-    margin: 5px;
+    margin: 4px;
+    cursor: pointer;
 }
+
 
 .featurePhoto {
     position: relative;
     display: inline-block;
     width: 180px;
-    height: 180px;
-    background-color: #ccc;
+    height: 190px;
     margin: 0;
+    opacity:1.0;
+    filter:alpha(opacity=100);
 }
 
-/*
-.featurePhoto:after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 0;
-    height: 0;
-    border-width: 10px;
-    border-style: solid;
-    z-index: 100;
-    border-color: #f00 transparent transparent transparent;
+
+.featurePortrait:hover .featurePhoto {
+    opacity:0.8;
+    filter:alpha(opacity=80);
 }
-*/
 
 .description {
     color: #888;

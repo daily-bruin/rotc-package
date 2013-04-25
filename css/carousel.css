@@ -1,0 +1,77 @@
+body {
+    background-color: #000;
+}
+
+.carouselTitle {
+    display: block;
+    margin-left: 285px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+p {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: 285px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #222;
+}
+
+.carouselContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -400px;
+    background-color: #fff;
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    -moz-box-shadow:    0px 5px 50px 5px rgba(0,0,0, 0.5);
+    -webkit-box-shadow: 0px 5px 50px 5px rgba(0,0,0, 0.5);
+    box-shadow:         0px 5px 50px 5px rgba(0,0,0, 0.5);
+    z-index: 10000;
+    text-align: left;
+}
+
+.DUMMYphoto {
+    position: fixed;
+    width: 267px;
+    height: 400px;
+    background-color: #ccc;
+    float: left;
+    margin-right: 20px;
+}
+
+.closeLabel {
+    position: fixed;
+    display: block;
+    float: right;
+    margin-left: 710px;
+    margin-top: 10px;
+    width: 66px;
+    height: 22px;
+    cursor: pointer;
+    background-image: url('../image/close.png');
+}
+
+.closeLabel:hover {
+    background-image: url('../image/close_active.png');
+}
+
+#pageMask {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 9999;
+}

@@ -6,7 +6,7 @@ body {
     display: inline-block;
     width: 180px;
     height: 180px;
-    background-color: #ccc;
+    background-color: #f00;
 }
 
 .arrow_box:after {
