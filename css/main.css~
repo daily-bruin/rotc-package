@@ -9,6 +9,7 @@ body {
 a {
     text-decoration: none;
     color: #624719;
+    border: 0;
 }
 
 a:visited {
@@ -112,7 +113,7 @@ nav a:hover {
 
 footer {
     display: block;
-    width: 860px;
+    width: 940px;
     border-top: 1px #ccc solid;
     text-align: center;
     font-size: small;
@@ -137,14 +138,6 @@ div.timelinePhoto {
     left: 0;
 }
 
-#pageContainer {
-    position: relative;
-    width: 900px;
-    margin: 0 auto 0 auto;
-    background-color: #fff;
-    padding: 5px 20px 0 20px;
-}
-
 .navItem {
     display: inline;
     font-size: 1.5em;
@@ -160,6 +153,7 @@ div.timelinePhoto {
     vertical-align: top;
     width: 180px;
     margin: 4px;
+    cursor: pointer;
 }
 
 
@@ -177,7 +171,6 @@ div.timelinePhoto {
 .featurePortrait:hover .featurePhoto {
     opacity:0.8;
     filter:alpha(opacity=80);
-    cursor: pointer;
 }
 
 .description {
@@ -194,4 +187,20 @@ div.timelinePhoto {
 
 .longform {
     margin: 1em 8em 0 8em;
+}
+
+#pageContainer {
+    position: relative;
+    width: 900px;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+    padding: 5px 20px 0 20px;
+
+}
+
+#nameplate {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 6px 12px 0 0;
 }
