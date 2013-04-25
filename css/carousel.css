@@ -14,11 +14,11 @@ body {
 
 p {
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     margin-left: 285px;
     font-size: 1.1em;
     line-height: 1.4em;
-    color: #222;
+    color: #333;
 }
 
 .carouselContainer {
@@ -65,6 +65,12 @@ p {
     background-image: url('../image/close_active.png');
 }
 
+.stopScrolling {
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
 #pageMask {
     position: fixed;
     margin: 0;
@@ -74,4 +80,5 @@ p {
     height: 100%;
     background-color: rgba(0,0,0, 0.5);
     z-index: 9999;
+    overflow: hidden;
 }
