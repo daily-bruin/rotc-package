@@ -21,6 +21,12 @@ a:hover {
     color: #000;
 }
 
+a.featurePortrait {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     margin: 0;
 }
@@ -152,8 +158,8 @@ div.timelinePhoto {
     display: inline-block;
     vertical-align: top;
     width: 180px;
-    margin: 4px;
     cursor: pointer;
+    padding: 0 4px 4px 4px;
 }
 
 

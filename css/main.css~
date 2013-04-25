@@ -21,6 +21,12 @@ a:hover {
     color: #000;
 }
 
+a.featurePortrait {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     margin: 0;
 }
@@ -113,7 +119,7 @@ nav a:hover {
 
 footer {
     display: block;
-    width: 940px;
+    width: 900px;
     border-top: 1px #ccc solid;
     text-align: center;
     font-size: small;
@@ -152,8 +158,8 @@ div.timelinePhoto {
     display: inline-block;
     vertical-align: top;
     width: 180px;
-    margin: 4px;
     cursor: pointer;
+    padding: 4px;
 }
 
 

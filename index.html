@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Inconsolata:700'>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/hashchange.min.js"></script>
     <script src="js/timeline.js"></script>
     <script src="js/carousel.js"></script>
 </head>
@@ -16,7 +17,7 @@
 
 <header>
     <h1>Training Ground</h1>
-    <a href="http://dailybruin.com"><img id="nameplate" src="image/nameplate_small.png"/></a>
+    <a href="#daily-bruin"><img id="nameplate" src="image/nameplate_small.png"/></a>
     <nav>
         <a class="navItem" href="#faces">Faces of ROTC Army</a>
         <a class="navItem" href="#women">Women in Combat</a>
@@ -27,21 +28,24 @@
 
 </header>
 
-<div id="pageMask"></div>
+<a href="#return" style="cursor: precision-select"><div id="pageMask"></div></a>
 <div id="pageContainer">
 
     <div class="section" id="faces">
         <h2>Faces of ROTC Army</h2>
         <h3>Some extra description and stuff and things to make this subhead longer here.</h3>
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-1">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Johnathan Duncan</h4>
-            <span class="description">Lorem ipsum dolor sit amet consectectur adspiscing elit.</span>
-        </div>
+
+        <a class="featurePortrait" href="#carousel-1">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-1">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Johnathan Duncan</h4>
+                <span class="description">Lorem ipsum dolor sit amet consectectur adspiscing elit.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-1">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Johnathan Duncan</span>
     <p class="carouselContent">
@@ -57,15 +61,17 @@
 </div>
 <!-- END HIDDEN -->
 
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-2">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Lisa H. Reynolds</h4>
-            <span class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
-        </div>
+        <a class="featurePortrait" href="#carousel-2">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-2">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Lisa H. Reynolds</h4>
+                <span class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-2">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Lisa H. Reynolds</span>
     <p class="carouselContent">
@@ -81,15 +87,17 @@
 </div>
 <!-- END HIDDEN -->
 
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-3">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Matthew L. Davis</h4>
-            <span class="description">Duis aute irure dolor in reprehenderit.</span>
-        </div>
+        <a class="featurePortrait" href="#carousel-3">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-3">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Matthew L. Davis</h4>
+                <span class="description">Duis aute irure dolor in reprehenderit.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-3">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Matthew L. Davis</span>
     <p class="carouselContent">
@@ -105,15 +113,17 @@
 </div>
 <!-- END HIDDEN -->
 
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-4">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Robert Garner</h4>
-            <span class="description">Excepteur sint occaecat cupidatat non proident.</span>
-        </div>
+        <a class="featurePortrait" href="#carousel-4">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-4">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Robert Garner</h4>
+                <span class="description">Excepteur sint occaecat cupidatat non proident.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-4">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Robert Garner</span>
     <p class="carouselContent">
@@ -134,15 +144,18 @@
     <div class="section" id="women">
         <h2>Women in Combat</h2>
         <h3>Women are pretty great. Here's some stuff about women in the army.</h3>
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-5">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Amanda Reid</h4>
-            <span class="description">Lorem ipsum dolor sit amet consectectur adspiscing elit.</span>
-        </div>
+
+        <a class="featurePortrait" href="#carousel-5">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-5">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Amanda Reid</h4>
+                <span class="description">Lorem ipsum dolor sit amet consectectur adspiscing elit.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-5">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Amanda Reid</span>
     <p class="carouselContent">
@@ -158,15 +171,17 @@
 </div>
 <!-- END HIDDEN -->
 
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-6">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Lisa H. Reynolds</h4>
-            <span class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
-        </div>
+        <a class="featurePortrait" href="#carousel-6">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-6">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Lisa H. Reynolds</h4>
+                <span class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-6">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Lisa H. Reynolds</span>
     <p class="carouselContent">
@@ -182,15 +197,17 @@
 </div>
 <!-- END HIDDEN -->
 
-        <div class="featurePortrait carouselLauncher" id="carouselLauncher-7">
-            <img class="featurePhoto" src="image/squareChatBubble.png"/>
-            <h4>Bridget Adams</h4>
-            <span class="description">Duis aute irure dolor in reprehenderit.</span>
-        </div>
+        <a class="featurePortrait" href="#carousel-7">
+            <div class="featurePortrait carouselLauncher" id="carouselLauncher-7">
+                <img class="featurePhoto" src="image/squareChatBubble.png"/>
+                <h4>Bridget Adams</h4>
+                <span class="description">Duis aute irure dolor in reprehenderit.</span>
+            </div>
+        </a>
 
 <!-- HIDDEN -->
 <div class="carouselContainer" id="carouselContainer-7">
-    <div class="closeLabel"></div>
+    <a href="#return"><div class="closeLabel"></div></a>
     <div class="DUMMYphoto"></div>
     <span class="carouselTitle">Bridget Adams</span>
     <p class="carouselContent">
