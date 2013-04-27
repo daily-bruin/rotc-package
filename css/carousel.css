@@ -10,15 +10,33 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-size: 2em;
+    font-weight: bold;
 }
 
 p {
-    padding-right: 30px;
+    padding-right: 20px;
     padding-bottom: 10px;
     margin-left: 285px;
     font-size: 1.0em;
     line-height: 1.4em;
     color: #333;
+}
+
+p.carouselSubhead {
+    color: #555;
+    font-size: 1.2em;
+}
+
+p.carouselInfo {
+    margin-left: 0;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 285px;
+    font-weight: normal;
+    background-color: #F5F5DC;
+    color: #000;
+    font-family: "Roboto", sans-serif;
 }
 
 .carouselContainer {
