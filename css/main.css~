@@ -25,6 +25,7 @@ a.featurePortrait {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    padding: 0 4px 4px 4px;
 }
 
 p {
@@ -61,8 +62,8 @@ h4 {
 header {
     display: block;
     position: relative;
-    width: 940px;
-    height: 470px;
+    width: 1010px;
+    height: 589px;
     background-image: url('../image/header.jpg');
     margin: 0 auto 0 auto;
     padding: 0;
@@ -73,7 +74,7 @@ header h1 {
     color: #000;
     margin: 0;
     padding: 0 15px 0 15px;
-    background-color: rgba(0,0,0, 0.0);
+    text-shadow: 0 0 5px #fff;
 }
 
 nav {
@@ -119,7 +120,7 @@ nav a:hover {
 
 footer {
     display: block;
-    width: 900px;
+    width: 970px;
     border-top: 1px #ccc solid;
     text-align: center;
     font-size: small;
@@ -159,7 +160,6 @@ div.timelinePhoto {
     vertical-align: top;
     width: 180px;
     cursor: pointer;
-    padding: 4px;
 }
 
 
@@ -197,7 +197,7 @@ div.timelinePhoto {
 
 #pageContainer {
     position: relative;
-    width: 900px;
+    width: 970px;
     margin: 0 auto 0 auto;
     background-color: #fff;
     padding: 5px 20px 0 20px;
@@ -206,7 +206,7 @@ div.timelinePhoto {
 
 #nameplate {
     position: absolute;
-    right: 0;
-    top: 0;
-    padding: 6px 12px 0 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 52px 9px;
 }

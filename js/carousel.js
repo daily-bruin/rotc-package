@@ -71,10 +71,6 @@ $(document).ready(function() {
                     $('#carouselContainer-6').show();
                     showMask(); 
                     break;
-                case "#carousel-7":
-                    $('#carouselContainer-7').show();
-                    showMask(); 
-                    break;
                 default:
                     break;                
             }

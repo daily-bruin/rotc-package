@@ -34,7 +34,7 @@
 
 #next {
     position: absolute;
-    right: 150px;
+    right: 220px;
     bottom: 0;
     background-color: rgba(0,0,0, 0.5);
     z-index: 50;
@@ -50,7 +50,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    width: 150px;
+    width: 220px;
     background-color: rgba(0,0,0, 0.5);
     z-index: 50;
 }

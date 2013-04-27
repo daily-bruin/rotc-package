@@ -16,7 +16,7 @@ p {
     padding-right: 30px;
     padding-bottom: 10px;
     margin-left: 285px;
-    font-size: 1.1em;
+    font-size: 1.0em;
     line-height: 1.4em;
     color: #333;
 }
@@ -40,8 +40,14 @@ p {
     text-align: left;
 }
 
+.carouselContainerFullHeight {
+    height: 100%;
+    top: 0;
+    margin-top: 0;
+}
+
 .DUMMYphoto {
-    position: fixed;
+    position: absolute;
     width: 267px;
     height: 400px;
     background-color: #ccc;
