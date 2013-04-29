@@ -92,6 +92,7 @@ nav {
     padding-bottom: 5px;
     margin: 0;
     overflow: hidden; /* ruh-roh */
+    text-align: center;
 }
 
 nav a {
@@ -99,7 +100,7 @@ nav a {
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     text-align: justify;
-    padding-left: 15px;
+    padding: 0 10px 0 10px;
     position: relative;
 }
 
@@ -179,8 +180,8 @@ div.timelinePhoto {
 
 
 .featurePortrait:hover .featurePhoto {
-    opacity:0.8;
-    filter:alpha(opacity=80);
+    opacity:0.9;
+    filter:alpha(opacity=90);
 }
 
 .description {
@@ -213,4 +214,18 @@ div.timelinePhoto {
     left: 0;
     bottom: 0;
     padding: 0 0 52px 9px;
+}
+
+#intro h3 {
+    color: #333;
+    font-size: 1em;
+    padding: 0 6em 0 6em;
+}
+
+#pdf {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px 0 0;
+    font-size: 0.8em;
 }

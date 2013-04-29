@@ -27,7 +27,8 @@ p {
     color: #888;
     display: block;
     font-size: 0.8em;
-    margin: 5px 0 0 0;
+    margin: 10px 0 0 0;
+    line-height: 1.5em;
 }
 
 .carouselContainerLarge .authorCredit {
@@ -99,10 +100,9 @@ p.carouselInfo {
     margin-left: 20px;
 }
 
-.DUMMYphoto {
+.photo {
     position: relative;
     width: 267px;
-    height: 400px;
     background-color: #ccc;
     float: left;
     margin-right: 20px;
