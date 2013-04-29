@@ -12,7 +12,7 @@ var generateTimeline = function(media_root, content, photo_width) {
             '<div class="timelinePhoto">'+
                 '<div class="timelineHead" id="timelineHead-'+(i+1)+'">'+
                     '<span class="time">'+content[i][1]+'</span>'+
-                    '<span class="activity">'+content[i][2]+'</span>'+
+                    '<div class="activity">'+content[i][2]+'</div>'+
                 '</div>'+
                 '<img src="'+media_root+content[i][0]+'"/>'+
             '</div>'

@@ -49,9 +49,13 @@ h2 {
 h3 {
     font-family: sans-serif;
     font-weight: normal;
-    margin: 0;
+    margin: 0 4em 0 4em;
     color: #888;
     margin-bottom: 1em;
+}
+
+h3.blurb {
+    margin: 0 2em 0 2em;
 }
 
 h4 {
@@ -175,8 +179,8 @@ div.timelinePhoto {
 
 
 .featurePortrait:hover .featurePhoto {
-    opacity:0.8;
-    filter:alpha(opacity=80);
+    opacity:0.9;
+    filter:alpha(opacity=90);
 }
 
 .description {

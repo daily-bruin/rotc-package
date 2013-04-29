@@ -1,19 +1,21 @@
 .timelineHead {
     position: absolute;
+    display: table;
     width: 100%;
-    height: 22px;
+    height: 58px;
     text-align: left; 
-    font-size: 1.2em;
+    font-size: 1.0em;
+    bottom: -0px;
 }
 
 .timelineHead:after {
     content: "";
     position: absolute;
-    right: -22px;
-    top: -1px;
+    right: -60px;
+    top: 0;
     width: 0;
     height: 0;
-    border-width: 12px;
+    border-width: 30px;
     border-style: solid;
     z-index: 100;
 }
@@ -35,7 +37,7 @@
 #next {
     position: absolute;
     right: 220px;
-    bottom: 0;
+    top: 0;
     background-color: rgba(0,0,0, 0.5);
     z-index: 50;
     color: #fff;
@@ -60,18 +62,21 @@
     font-weight: bold;
     font-size: 1.4em;
     position: absolute;
-    top: 22px;
+    top: -23px;
     background-color: rgba(0,0,0, 0.5);
     padding-left: 20px;
     padding-right: 10px;
 }
 
 .activity {
-    padding-left: 20px;
+    padding-left: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    
 }
 
 #scroller {
-    height: 500px;
+    height: 550px;
     width: 100%;
     background-color: #000;
     overflow: hidden;
