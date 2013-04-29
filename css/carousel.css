@@ -108,6 +108,25 @@ p.carouselInfo {
     margin-right: 20px;
 }
 
+.photoInline {
+    padding: 10px;
+    display: block;
+}
+
+#w1 {
+    float: right;
+}
+
+#w2 {
+    float: left;
+    padding-left: 0;
+}
+
+#w3 {
+    float: right;
+}
+
+
 .closeLabel {
     position: fixed;
     display: block;
